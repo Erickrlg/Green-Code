@@ -27,7 +27,7 @@ Para alimentar mi NotebookLM, seleccioné las siguientes fuentes técnicas:
 4. **SiliconFlow:** [Guía Definitiva - Los Mejores LLM Energéticamente Eficientes para Implementación en 2026](https://www.siliconflow.com/articles/es/best-energy-efficient-LLMs-for-deployment)
 
 ---
-### 🧠 Ingeniería de Prompts y "Cicatrices"
+### 🧠 Ingeniería de Prompts
 
 #### ❌ Primer Intento : Enfoque de Auditor
 * **Prompt:** "[Actúa como un Auditor de Software Sostenible. Basándote exclusivamente en las fuentes que he subido, explica qué es el 'Software Carbon Intensity' (SCI) y menciona 3 estrategias prácticas que un desarrollador puede aplicar hoy mismo para reducirlo. Presenta la respuesta en una tabla comparativa.]"
