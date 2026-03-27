@@ -29,23 +29,20 @@ Para alimentar mi NotebookLM, seleccioné las siguientes fuentes técnicas:
 ---
 ### 🧠 Ingeniería de Prompts y "Cicatrices"
 
-#### ❌ Intento 1: Enfoque de Auditor
+#### ❌ Primer Intento : Enfoque de Auditor
 * **Prompt:** "[Actúa como un Auditor de Software Sostenible. Basándote exclusivamente en las fuentes que he subido, explica qué es el 'Software Carbon Intensity' (SCI) y menciona 3 estrategias prácticas que un desarrollador puede aplicar hoy mismo para reducirlo. Presenta la respuesta en una tabla comparativa.]"
 * **Resultado:** NotebookLM generó la tabla, pero las estrategias eran muy teóricas y no mencionaba ejemplos de código específicos.
 * **Dificultad (Cicatriz):** NotebookLM tiende a ser muy resumido si no se le pide explícitamente que "profundice en los ejemplos técnicos".
 * **Troubleshooting:** Tuve que ajustar el prompt para pedirle que incluya fragmentos de código de ejemplo (Code Snippets).
 
-#### ✅ Intento 2: EEnfoque de Ingeniería (Optimizado)
+#### ✅ Segundo Intento : Enfoque técnico de Ingeniería (Optimizado)
 * **Prompt:** "[Actúa como un Desarrollador de Software Senior especializado en Green Coding. La respuesta anterior fue útil en cuanto a costos, pero ahora necesito evidencia técnica.
 
 Basándote en mis fuentes:
 
 1) Identifica un patrón de código 'sucio' (por ejemplo, un bucle ineficiente o una consulta pesada).
-
 2) Proporciona un ejemplo de código (Snippet) en Python o JavaScript que sea ineficiente.
-
 3) Proporciona la versión optimizada (Green) del mismo código.
-
 4) Explica brevemente por qué la segunda versión consume menos ciclos de CPU o memoria.".]"
    
 * **Resultado:** La IA pasó de dar consejos teóricos sobre costos a proporcionar comparativas de código (Inneficient vs. Green).
