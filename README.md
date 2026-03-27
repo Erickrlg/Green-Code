@@ -3,7 +3,7 @@ Repositorio de mi Primer proyecto en DIO sobre Utilización de Google NotebookLM
 # 🌿 Miniguía de Estudios: IA Generativa y Green Coding
 > **Proyecto de Aprendizaje Activo con Google NotebookLM**
 
-Este repositorio contiene mi proyecto final para el curso de **Desarrollo de IA** en la plataforma [DIO](https://www.dio.me/). Aquí exploro cómo la Inteligencia Artificial puede ayudarnos a escribir código más eficiente y sostenible (Green Coding).
+Este repositorio contiene mi proyecto para el curso de **Desarrollo de IA** en la plataforma [DIO](https://www.dio.me/). Aquí exploro cómo la Inteligencia Artificial puede ayudarnos a escribir código más eficiente y sostenible (Green Coding).
 
 ---
 
@@ -19,11 +19,11 @@ El **Green Coding** es un enfoque de ingeniería de software que busca minimizar
 ---
 
 ## 📚 Curaduría de Fuentes
-Para alimentar mi NotebookLM, seleccioné las siguientes fuentes técnicas de alta autoridad:
+Para alimentar mi NotebookLM, seleccioné las siguientes fuentes técnicas:
 
 1.  **Green Software Foundation:** [Principios del Software Verde](https://learn.greensoftware.foundation/) (Documentación base).
 2.  **Microsoft Green Tech:** [Reportes sobre Software Sostenible](https://devblogs.microsoft.com/sustainable-software/).
-3.  **Paper Académico:** "Energy Efficiency in Large Language Models" (Subido como PDF).
+3.  **IBM:** [O futuro da inteligência artificial e da eficiência energética](https://www.ibm.com/br-pt/think/insights/future-ai-energy-efficiency/).
 
 ---
 
