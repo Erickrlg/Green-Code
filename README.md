@@ -27,18 +27,30 @@ Para alimentar mi NotebookLM, seleccioné las siguientes fuentes técnicas:
 4. **SiliconFlow:** [Guía Definitiva - Los Mejores LLM Energéticamente Eficientes para Implementación en 2026](https://www.siliconflow.com/articles/es/best-energy-efficient-LLMs-for-deployment)
 
 ---
+### 🧠 Ingeniería de Prompts y "Cicatrices"
 
-## 🧠 Ingeniería de Prompts y "Cicatrices"
-En esta sección documento el proceso de comunicación con la IA. El mercado valora no solo el resultado, sino el razonamiento detrás.
+#### ❌ Intento 1: Enfoque de Auditor
+* **Prompt:** "[Actúa como un Auditor de Software Sostenible. Basándote exclusivamente en las fuentes que he subido, explica qué es el 'Software Carbon Intensity' (SCI) y menciona 3 estrategias prácticas que un desarrollador puede aplicar hoy mismo para reducirlo. Presenta la respuesta en una tabla comparativa.]"
+* **Resultado:** NotebookLM generó la tabla, pero las estrategias eran muy teóricas y no mencionaba ejemplos de código específicos.
+* **Dificultad (Cicatriz):** NotebookLM tiende a ser muy resumido si no se le pide explícitamente que "profundice en los ejemplos técnicos".
+* **Troubleshooting:** Tuve que ajustar el prompt para pedirle que incluya fragmentos de código de ejemplo (Code Snippets).
 
-### ❌ El "Fallo" Inicial (Intento 1)
-* **Prompt:** "¿Cómo hago mi código más verde?"
-* **Resultado:** Respuesta muy genérica y poco útil para un desarrollador.
-* **Aprendizaje:** Falta de contexto técnico y especificidad en la métrica.
+#### ✅ Intento 2: EEnfoque de Ingeniería (Optimizado)
+* **Prompt:** "[Actúa como un Desarrollador de Software Senior especializado en Green Coding. La respuesta anterior fue útil en cuanto a costos, pero ahora necesito evidencia técnica.
 
-### ✅ El Prompt Optimizado (Intento 2)
-* **Prompt:** "Actúa como un experto en MLOps y Green Coding. Analiza el siguiente fragmento de código [AQUÍ COLOCAMORS EL CÓDIGO] y sugiere 3 optimizaciones para reducir ciclos de CPU innecesarios, justificando cada una con el concepto de Big O Notation."
-* **Resultado:** Sugerencias precisas sobre manejo de memoria y estructuras de datos más eficientes.
+Basándote en mis fuentes:
+
+1) Identifica un patrón de código 'sucio' (por ejemplo, un bucle ineficiente o una consulta pesada).
+
+2) Proporciona un ejemplo de código (Snippet) en Python o JavaScript que sea ineficiente.
+
+3) Proporciona la versión optimizada (Green) del mismo código.
+
+4) Explica brevemente por qué la segunda versión consume menos ciclos de CPU o memoria.".]"
+   
+* **Resultado:** La IA pasó de dar consejos teóricos sobre costos a proporcionar comparativas de código (Inneficient vs. Green).
+* **Mejora (Troubleshooting):** Al asignar un rol de "Desarrollador Senior" y pedir explícitamente "Snippets", obligué al modelo a buscar patrones algorítmicos en las fuentes en lugar de resúmenes ejecutivos.
+* **Lección aprendida:** La especificidad en el formato de salida (pedir código) es clave para usar NotebookLM como herramienta de desarrollo y no solo de lectura.
 
 ---
 
@@ -47,6 +59,17 @@ En esta sección documento el proceso de comunicación con la IA. El mercado val
 El Green Coding no es solo "ahorrar batería", es una disciplina que impacta en el costo operativo (Cloud) y la latencia del usuario. A través de este estudio, determiné que la **optimización de consultas a bases de datos** es el punto con mayor retorno de inversión energética.
 
 ### Glosario Clave
+
+* **Software Carbon Intensity (SCI):** Es una especificación técnica que mide las emisiones de carbono de una aplicación basándose en el consumo de energía y la intensidad de carbono de la red.
+Aplicación real: Un programador usa el SCI para calcular cuántos gramos de CO2 se emiten por cada mil transacciones procesadas en su API.
+* **EcoQoS:** Es un nivel de Calidad de Servicio (QoS) en Windows que permite ejecutar procesos de forma eficiente para aumentar la duración de la batería y reducir el calor generado.
+Aplicación real: Al desarrollar una aplicación de sincronización en segundo plano, el programador marca esos procesos con el nivel EcoQoS para que no drenen la energía del dispositivo del usuario.
+* **Interrupción Temprana (Early Stopping):** Técnica de entrenamiento que predice si un modelo superará o no las expectativas de rendimiento y detiene el proceso si los resultados iniciales son pobres para ahorrar energía.
+Aplicación real: Un desarrollador configura su pipeline de IA para cancelar automáticamente el entrenamiento de un modelo si la pérdida (loss) no disminuye en las primeras 5 épocas, evitando ciclos de CPU inútiles.
+* **Hardware con limitación de potencia:** Configuración que limita el consumo eléctrico del procesador para maximizar la eficiencia, reduciendo el gasto energético hasta un 15% con un impacto mínimo en la velocidad.
+Aplicación real: Un ingeniero de SRE configura sus servidores de pruebas para operar con un límite de potencia, aceptando un retraso del 3% en las pruebas a cambio de un ahorro energético significativo.
+* **LLM Energéticamente Eficientes (Modelos Ligeros):** Modelos de lenguaje de tamaño reducido (normalmente entre 7B y 9B parámetros) optimizados para ofrecer alta calidad con requisitos mínimos de recursos.
+Aplicación real: Un programador elige implementar Llama 3.1-8B en lugar de un modelo generalista masivo para una tarea de resumen de texto, reduciendo drásticamente la huella de carbono de la inferencia
 * **Carbon Intensity:** Cantidad de carbono emitido por unidad de energía consumida.
 * **Energy Proportionality:** La relación entre el uso de hardware y el consumo de energía.
 * **Big O Notation:** Medida de la eficiencia de un algoritmo.
