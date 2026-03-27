@@ -69,9 +69,12 @@ Aplicación real: Un desarrollador configura su pipeline de IA para cancelar aut
 Aplicación real: Un ingeniero de SRE configura sus servidores de pruebas para operar con un límite de potencia, aceptando un retraso del 3% en las pruebas a cambio de un ahorro energético significativo.
 * **LLM Energéticamente Eficientes (Modelos Ligeros):** Modelos de lenguaje de tamaño reducido (normalmente entre 7B y 9B parámetros) optimizados para ofrecer alta calidad con requisitos mínimos de recursos.
 Aplicación real: Un programador elige implementar Llama 3.1-8B en lugar de un modelo generalista masivo para una tarea de resumen de texto, reduciendo drásticamente la huella de carbono de la inferencia
-* **Carbon Intensity:** Cantidad de carbono emitido por unidad de energía consumida.
-* **Energy Proportionality:** La relación entre el uso de hardware y el consumo de energía.
-* **Big O Notation:** Medida de la eficiencia de un algoritmo.
+* **Carbon Intensity (Intensidad de Carbono):** Es la medida de cuánto carbono se emite por cada unidad de energía consumida de la red eléctrica, lo cual varía según la fuente (renovable o fósil).
+Aplicación real: Un desarrollador programa una tarea pesada de limpieza de base de datos para que se ejecute en una región de la nube o en un horario específico donde la red tenga una intensidad de carbono baja gracias al uso de energía eólica o solar.
+* **Energy Proportionality (Proporcionalidad Energética):** Es la medida de la relación entre la carga de trabajo y el consumo de energía, buscando que el hardware consuma recursos de manera proporcional a su uso y tienda a cero en inactividad.
+Aplicación real: Al diseñar un microservicio, el programador asegura que el sistema no mantenga conexiones o procesos "fantasmas" activos, permitiendo que el hardware entre en estados de ahorro de energía cuando no hay tráfico.
+* **Big O Notation (Notación Big O):** Herramienta matemática que describe la eficiencia de un algoritmo en términos de tiempo o memoria a medida que crece el volumen de datos, permitiendo predecir su impacto energético.
+Aplicación real: Un desarrollador sustituye una búsqueda lineal (O(n)) por una tabla hash (O(1)) en un proceso de validación frecuente, reduciendo masivamente los ciclos de CPU y el consumo eléctrico total por cada solicitud.
 
 ### Prompts Reutilizables
 * `"Resume los principios de eficiencia energética aplicados a [Python]."`
