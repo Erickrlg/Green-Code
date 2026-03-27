@@ -41,8 +41,7 @@ En esta sección documento el proceso de comunicación con la IA. El mercado val
 
 ---
 
-## 📖 Miniguía de Estudo (Entrega Final)
-
+## 📖 Miniguía de Estudo
 ### Resumen Estructurado
 El Green Coding no es solo "ahorrar batería", es una disciplina que impacta en el costo operativo (Cloud) y la latencia del usuario. A través de este estudio, determiné que la **optimización de consultas a bases de datos** es el punto con mayor retorno de inversión energética.
 
@@ -58,4 +57,4 @@ El Green Coding no es solo "ahorrar batería", es una disciplina que impacta en 
 ---
 
 ## 👨‍💻 Autor
-Desarrollado por [TU NOMBRE AQUÍ] para el desafío de proyecto en DIO.
+Desarrollado por [Erick Ledezma] para el desafío de proyecto en DIO.
