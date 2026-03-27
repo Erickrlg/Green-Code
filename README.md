@@ -24,7 +24,7 @@ Para alimentar mi NotebookLM, seleccioné las siguientes fuentes técnicas:
 1.  **Green Software Foundation:** [Principios del Software Verde](https://learn.greensoftware.foundation/) (Documentación base).
 2.  **Microsoft Green Tech:** [Reportes sobre Software Sostenible](https://devblogs.microsoft.com/sustainable-software/).
 3.  **IBM:** [O futuro da inteligência artificial e da eficiência energética](https://www.ibm.com/br-pt/think/insights/future-ai-energy-efficiency/).
-4. **SiliconFlow:** [Guía Definitiva - Los Mejores LLM Energéticamente Eficientes para Implementación en 2026](https://www.siliconflow.com/articles/es/best-energy-efficient-LLMs-for-deployment/)
+4. **SiliconFlow:** [Guía Definitiva - Los Mejores LLM Energéticamente Eficientes para Implementación en 2026](https://www.siliconflow.com/articles/es/best-energy-efficient-LLMs-for-deployment)
 
 ---
 
