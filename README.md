@@ -60,7 +60,14 @@ El Green Coding no es solo "ahorrar batería", es una disciplina que impacta en 
 ### Glosario Clave
 
 * **Software Carbon Intensity (SCI):** Es una especificación técnica que mide las emisiones de carbono de una aplicación basándose en el consumo de energía y la intensidad de carbono de la red.
-Aplicación real: Un programador usa el SCI para calcular cuántos gramos de CO2 se emiten por cada mil transacciones procesadas en su API.
+Para calcular la Intensidad de Carbono del Software (SCI), debes obtener una puntuación que represente las emisiones de carbono por una "unidad funcional" (como por usuario, por consulta o por dispositivo).
+El cálculo se basa en dos componentes fundamentales descritos en las normas de la Green Software Foundation:
+•	Emisiones Operacionales (O): Calculadas multiplicando la energía consumida por el software (E) por la Intensidad de Carbono (I) de la red eléctrica en el momento de la ejecución.
+•	Carbono Incorporado (M): Es la fracción de las emisiones generadas durante la fabricación y el desecho del hardware que se atribuye a tu software mientras se está ejecutando.
+La lógica simplificada consiste en sumar estos dos valores y dividirlos por la unidad de escala elegida (R):
+SCI = ((E*I)+M)/R
+El objetivo del SCI no es medir el volumen total de carbono, sino la intensidad, lo que permite identificar si tu código se está volviendo más eficiente independientemente del volumen de usuarios.
+Aplicación real: Un programador usa el SCI para calcular cuántos gramos de CO2 se emiten por cada mil transacciones procesadas en su API. Se calcula 
 * **EcoQoS:** Es un nivel de Calidad de Servicio (QoS) en Windows que permite ejecutar procesos de forma eficiente para aumentar la duración de la batería y reducir el calor generado.
 Aplicación real: Al desarrollar una aplicación de sincronización en segundo plano, el programador marca esos procesos con el nivel EcoQoS para que no drenen la energía del dispositivo del usuario.
 * **Interrupción Temprana (Early Stopping):** Técnica de entrenamiento que predice si un modelo superará o no las expectativas de rendimiento y detiene el proceso si los resultados iniciales son pobres para ahorrar energía.
