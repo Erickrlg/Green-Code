@@ -1,6 +1,8 @@
 # Green-Code
 Repositorio de mi Primer proyecto en DIO sobre Utilización de Google NotebookLM
+
 # 🌿 Miniguía de Estudios: IA Generativa y Green Coding
+
 > **Proyecto de Aprendizaje Activo con Google NotebookLM**
 
 Este repositorio contiene mi proyecto para el curso de **Desarrollo de IA** en la plataforma [DIO](https://www.dio.me/). Aquí exploro cómo la Inteligencia Artificial puede ayudarnos a escribir código más eficiente y sostenible (Green Coding).
@@ -72,7 +74,7 @@ Aplicación real: Un programador elige implementar Llama 3.1-8B en lugar de un m
 * **Big O Notation:** Medida de la eficiencia de un algoritmo.
 
 ### Prompts Reutilizables
-* `"Resume los principios de eficiencia energética aplicados a [Lenguaje X]."`
+* `"Resume los principios de eficiencia energética aplicados a [Python]."`
 * `"Explica la diferencia de consumo entre un bucle 'for' tradicional y una operación vectorizada en este contexto."`
 
 ---
